@@ -103,7 +103,7 @@
       .sticker-right-css::before{ /*right sticker*/
         content: url('images/woman.png');
         position: absolute;
-      transform: scale(0.2);
+      transform: scale(0.15);
       top: -150px;
       right: -100px;
       }
