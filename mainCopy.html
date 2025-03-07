@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--CSS FILE-->
+    <link rel="stylesheet" href="mainTW.css">
+    <title>دورة البراعم </title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<!--=========================================================================================================================================================================-->
+<!--=========================================================================================================================================================================-->
+<!--
+<i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-xmark"></i>
+-->
+<body class="h-[100vh]"  >
+    
+    <div class="fixed inset-0 w-full h-full bg-cover bg-center -z-10" style="background-image: url('images/background.jpg');" >
+        <!--Background image-->
+    </div>
+    <div class="fixed top-0 left-0 w-full h-full z-[-1] bg-pink-200/70"></div>
+
+
+    <nav class="md:m-[20px] m-0  p-[10px_20px] flex  items-center justify-between md:bg-transparent bg-[#ef5689]">
+        <!-- Home Icon -->
+        <a href="#">
+          <i class="fa-solid fa-house md:text-[#f26992] text-[#fae1ec] md:text-[30px] text-[24px]" ></i>
+        </a>
+      
+        <!-- Hamburger Menu (Visible on Small Screens) -->
+        <button id="menu-toggle" class="md:hidden">
+          <i class="menu-sym fa-solid fa-bars text-[#fae1ec]" style="font-size: 24px;"></i>
+        </button>
+      
+        <!-- Navigation Links (Hidden on Small Screens)  not hidden but make it absolute top -100%-->
+        <ul id="menu" class=" md:p-0 pt-[8px] md:relative absolute md:top-[0px] top-[-100%] md:left-[20px]  left-[0px] md:bg-transparent bg-[#ef5689]  flex md:flex-row md:items-center flex-col md:justify-between w-[100%] lg:w-[40%] md:w-[70%]">
+          <!-- Volunteer Link -->
+          <li class="md:rounded-[50px] md:bg-[#ef5689] text-white md:p-[3px_15px] p-[15px]  hover:bg-[#d94a7a] transition-colors">
+            <a class="no-underline" href="#">تطوعي معنا</a>
+          </li>
+          <hr class="block md:hidden ">
+
+      
+          <!-- Join Us Link -->
+          <li class="md:rounded-[50px] md:bg-[#ef5689] text-white  md:p-[3px_15px] p-[15px] hover:bg-[#d94a7a] transition-colors">
+            <a class="no-underline" href="#">انضمي لنا</a>
+          </li>
+          <hr class="block md:hidden ">
+
+          <!-- Donate Link -->
+          <li class="md:rounded-[50px] md:bg-[#ef5689] text-white  md:p-[3px_15px] p-[15px] hover:bg-[#d94a7a] transition-colors">
+            <a class="no-underline" href="#">تبرع للمبادرة</a>
+          </li>
+
+        </ul>
+      </nav>
+
+<main class="  flex justify-center py-[40px] mb-[20px]  container sm:h-[calc(100%-100px)] h-[calc(100%-55px)]  mx-auto  my-auto   ">
+    <div class="flex flex-col md:flex-row justify-between md:gap-[20px]    items-center md:items-start my-auto">        
+        <div class="md:w-[250px]  w-[180px] my-auto  mx-auto ">
+            <img src="images/logo.png"  alt="">
+        </div>
+<!--
+            <div class="line-container lg:block hidden my-auto ">
+            <div class="dashed-line "></div>
+          </div>         
+-->
+          <div class="  h-[300px] mx-[30px] my-auto md:block hidden">
+            <img class="h-[100%]" src="images/barriere.png" alt="">
+          </div>
+        <div class=" h-[100%]  flex justify-center  gap-[40px]  px-2 mt-[30px] sm:m-0 flex-col ">
+            <h1 class="text-center text-[25px] mx-[20px]">الموقع الرسمي لمبادرة تاج الوقار</h1>
+            <div class="bar block md:hidden">
+                <img class=" mx-auto" src="images/barriereSm.png" alt="">
+              </div>
+            <div class="  mx-auto">
+                <p class="text-center ">
+                    مبادرة تاج الوقار لحفظ القرآن الكريم عن بعد برواية ورش عن نافع من طريق أبي يعقوب الأزرق. 
+                    <br class="lg:block hidden">
+                    مع ثلة من الأستاذات المتقنات والبرامج المميزة والمتابعة الفردية لكل طالبة.
+                </p>
+            </div>
+            <h3 class="  text-center bg-pink-700/50 sm:w-[350px] w-[320px] mx-auto ">تاج الوقار, جلم يدرك بالإخلاص والتعاهد والتكرار</h3>
+            <div class="flex justify-around mb-[30px] items-center ">
+                <a class="text-black py-[5px] md:w-[150px] w-[120px] text-center border-[1px] border-[#d14972] bg-white rounded-[50px] pinkShadow" href="#">من نحن</a>
+                <a class="text-white py-[5px] md:w-[150px] w-[120px] text-center border-[1px] border-[#d14972] bg-[#ef5689] rounded-[50px] whiteShadow" href="#">فيديو تعريفي</a>
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('top-[46px]');
+    // Check if the menu contains the 'fa-bars' class
+    const faSolid = document.querySelector('.menu-sym')
+    if (faSolid.classList.contains("fa-bars")) {
+        faSolid.classList.remove('fa-bars');
+        faSolid.classList.add('fa-xmark');
+    } else {
+        faSolid.classList.remove('fa-xmark');
+        faSolid.classList.add('fa-bars');
+    }
+    });
+  </script>
+</body>
+</html>

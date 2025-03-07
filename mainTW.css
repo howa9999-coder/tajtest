@@ -1,0 +1,51 @@
+/*font*/
+
+@font-face {
+  font-family: 'MadaniArabic-Regular';
+  src: url('fonts/alfont_com_Madani-Arabic-Regular.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MadaniArabic-Medium';
+  src: url('fonts/alfont_com_Madani-Arabic-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MadaniArabic-Light';
+  src: url('fonts/alfont_com_Madani-Arabic-Light.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arimo';
+  src: url('fonts/Arimo-Italic.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+*{
+  font-family:MadaniArabic-Regular ;
+}
+body{
+  padding: 0;
+}
+/*Shadows*/
+.pinkShadow{
+  box-shadow: 5px 5px 2px 1px #f9a3b7;
+}
+.whiteShadow{
+  box-shadow: 5px 5px 2px 1px white;
+}
+
+main > div {
+  transition: transform 2s ease;
+}
+/*  @media(max-width: 512px){
+  h1{
+    font-size: 22.8px;
+  }
+
+
+ } */
