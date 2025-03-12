@@ -21,7 +21,7 @@
     </div>
     <!--logo & main title-->
 
-        <nav class="fixed top-[0px] w-[100%] z-[9000000000] md:p-[10px] m-0  p-[10px_10px] flex  items-center justify-between  bg-[#ef5689]">
+        <nav class="fixed top-[0px] w-[100%] z-[9000000000] md:p-[5px] m-0  p-[10px_10px] flex  items-center justify-between md:bg-transparent  bg-[#ef5689]">
             <!-- Home Icon
                          <a href="#">
               <i class="fa-solid fa-house md:text-[#f26992] text-[#fae1ec]" style=" font-size: 30px;"></i>
@@ -349,7 +349,17 @@
   </footer>
 
 <script>
+    const navbar = document.querySelector('nav');
 
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.remove('md:bg-transparent');
+    navbar.classList.add('md:bg-[#ef5689]');
+  } else {
+    navbar.classList.remove('md:bg-[#ef5689]');
+    navbar.classList.add('md:bg-transparent');
+  }
+});
     document.getElementById('menu-toggle').addEventListener('click', function () {
       const menu = document.getElementById('menu');
       menu.classList.toggle('top-[60px]');
