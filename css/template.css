@@ -1,0 +1,52 @@
+/*font*/
+.font-family-regular-css{
+  font-family: MadaniArabic-Regular;
+  font-size: 19.6px;
+}
+
+@keyframes fadeInX {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+ul{
+  animation: fadeInX 1s ease-out;
+
+}
+@font-face {
+    font-family: 'MadaniArabic-Regular';
+    src: url('../fonts/alfont_com_Madani-Arabic-Regular.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MadaniArabic-Medium';
+    src: url('../fonts/alfont_com_Madani-Arabic-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MadaniArabic-Light';
+    src: url('../fonts/alfont_com_Madani-Arabic-Light.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arimo';
+    src: url('../fonts/Arimo-Italic.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+*{
+    font-family:MadaniArabic-Regular ;
+}
+
+
+/*====================== Main title=======================*/
+
+/* DEV NOTE: main element styles below are template-only - safe to delete */
+/*
+main{
+    height: 100vh;
+    border: 1px solid green;
+}*/
