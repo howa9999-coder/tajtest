@@ -40,6 +40,11 @@ nav ul{
 *{
     font-family:MadaniArabic-Regular ;
 }
+.active{
+  color: #ef5689 !important;
+  background-color: white !important;
+  border: 2px solid #ef5689;
+}
 
 
 /*====================== Main title=======================*/
