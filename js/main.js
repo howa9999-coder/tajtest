@@ -1,7 +1,5 @@
 // Select the navigation bar and home icon elements
 const navbar = document.querySelector('nav');
-const home = document.querySelector(".home-icon");
-
 /**
  * Handles scroll behavior for the navigation bar:
  * - Changes navbar background and home icon color when scrolled past 50px
@@ -12,14 +10,12 @@ window.addEventListener('scroll', () => {
     // Scrolled state styles
     navbar.classList.remove('lg:bg-transparent');
     navbar.classList.add('lg:bg-[#ef5689]');
-    home.classList.remove('lg:text-[#f26992]');
-    home.classList.add('lg:text-[#fae1ec]');
+  //  home.classList.remove('lg:text-[#f26992]');
+  //  home.classList.add('lg:text-[#fae1ec]');
   } else {
     // Top-of-page state styles
     navbar.classList.remove('lg:bg-[#ef5689]');
     navbar.classList.add('lg:bg-transparent');
-    home.classList.remove('lg:text-[#fae1ec]');
-    home.classList.add('lg:text-[#f26992]');
   }
 });
 
