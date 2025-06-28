@@ -1,33 +1,15 @@
-/*.hijabi{
-width: 300px; 
-height: 150px;
-position: fixed;
-bottom: 10px;
-left: 10px;
-z-index: -1;
-}*/
-/* .hijabi{
-width: 300px; 
-height: 150px;
-position: absolute;
-bottom: -28px;
-left: 10px;
-z-index: -1;
-} */
+
 
 .pinkShadow{
-  /* box-shadow: 0px 8px 2px 1px #db719b ; */
   box-shadow: 
   2px 7px 2px 1px #db719b, /* First shadow */
   -2px 12px 2px 1px black; /* Second shadow */
 }
 .whiteShadow{
-/* box-shadow: 0px 8px 2px 1px white; */
 box-shadow: 
 2px 8px 2px 1px white, /* First shadow */
 -2px 15px 2px 1px black; /* Second shadow */
 }
-
 
 .container{
 height: 100%;
@@ -49,9 +31,7 @@ width: 100%; /* Set the width of the header */
 overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
 
 }
-/* .hijabi-icon{
-display: none;
-} */
+
    .hijabi-icon{
     display: inline-block;
     width: 80px;
@@ -98,8 +78,8 @@ flex-wrap: wrap;
 gap: 10px;
 } 
 .card{
-width: 140px;
-height: 140px;
+width: 150px;
+height: 150px;
 margin: 10px;
 
 }
@@ -110,15 +90,12 @@ border: none;
 background-color: transparent;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   margin-top: 30px;
-  
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; 
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -128,10 +105,7 @@ background-color: transparent;
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-/* .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-} */
+
 .flip-card-inner.is-flipped {
   transform: rotateY(180deg);
 }
@@ -153,7 +127,6 @@ background-color: transparent;
   text-align: justify;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   justify-content: center !important;
 
@@ -251,11 +224,14 @@ background-color: transparent;
 }
 .card{
   width: 140px;
-  height: 95px;
+  height: 100px;
   margin: 15px;
 }
 .titles{
   font-size: 16px;
+}
+.exception{
+  font-size: 13px !important;
 }
 .cards-container{
   gap: 20px;
@@ -286,7 +262,7 @@ background-color: transparent;
   }
   .card{
     width: 135px;
-    height: 95px;
+    height: 100px;
     margin: 0px;
 
   }
@@ -333,9 +309,7 @@ background-color: transparent;
   .small{
     font-size: 14px;
   } 
-  .break{
-    display: none;
-  }
+
 }
 .popover-title{
   font-size: 19.6px !important;
